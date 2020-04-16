@@ -40,7 +40,7 @@ public class LoginCheck extends HttpServlet {
 
 		String uname = request.getParameter("uname");
 		String password = request.getParameter("password");
-		if (uname.equals("java") && password.equals("12345")) {
+		if (uname.equals("java&database") && password.equals("123456")) {
 			response.sendRedirect("member.jsp");
 		} else {
 			response.sendRedirect("error.jsp");
